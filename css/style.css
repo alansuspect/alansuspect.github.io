@@ -230,6 +230,10 @@ th {
 /* Standard */
 
 body {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #404040;
     font-size: 16px;
 }
 
