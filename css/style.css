@@ -619,7 +619,7 @@ a.package-button:hover {
 /* contact */
 
 body.thanks #contact {
-    height: 100vh !important;
+    height: 70%;
 }
 
 #contact.content-section {
