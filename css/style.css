@@ -618,6 +618,10 @@ a.package-button:hover {
 
 /* contact */
 
+body.thanks #contact {
+    height: 100vh !important;
+}
+
 #contact.content-section {
     padding: 7em 0;
 }
