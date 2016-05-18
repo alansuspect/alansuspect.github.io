@@ -670,11 +670,16 @@ form#contactForm {
 
 
 
-/* contact */
+/* s5 */
 
 
 #s5_designs.content-section {
     padding: 7em 0;
+}
+
+.s5-items img {
+	width: 100%;
+	margin-bottom: 2em;
 }
 
 
