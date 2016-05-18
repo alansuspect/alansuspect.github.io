@@ -464,6 +464,10 @@ h1.brand-heading {
 }
 
 
+#s5_designs .hover-bg .hover-text {
+	max-height: none;
+}
+
 .modal-content {
     max-width: 90%;
     position: relative;
