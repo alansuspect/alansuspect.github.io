@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Discover Hong Kong</title>
+		<meta name="description" content="Discover Hong Kong">
+		<meta name="author" content="Discover Hong Kong">
+
+	    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+		<header id="header" class="banner explore">
+			<div class="container">
+				<a href="#" title="Hong Kong - Asia's World City" class="header-logo">
+					<img src="images/logo.png" alt="Hong Kong - Asia's World City" />
+				</a>
+				<div class="navigation">
+					<select>
+						<span>make js</span>
+					</select>
+					<ul>
+						<li><a href="attractions.html" title="Attractions">Attractions</a></li>
+						<li><a href="dineanddrink.html" title="Dine and Drink">Dine and Drink</a></li>
+						<li><a href="shop.html" title="Shop">Shop</a></li>
+						<li><a href="thingstodo.html" title="Things to Do">Things to Do</a></li>
+					</ul>
+				</div>
+				<h1 class="header-title">Explore</h1>
+			</div>
+		</header>
+		<section id="explore_content">
+			<div class="container">
+				<div class="three-width">
+					<h2>Map</h2>
+					<p>Find your way around Hong Kong and look out for points of interest in your vicinity! You can search by locations, attractions or buildings, e.g. Wong Tai Sin Temple, Stanley, Tsim Sah Tsui.</p>
+
+					<form>
+						<ul class="search-map">
+							<li>
+								<label for="search">Search</label>
+								<input type="text" id="search" />
+							</li>
+							<li>
+								<label for="district">District</label>
+								<select id="district">
+									<option>Islands</option>
+									<option>Kwai Tsing</option>
+									<option>North</option>
+									<option>Sai Kung</option>
+									<option>Sha Tin</option>
+									<option>Tai Po</option>
+									<option>Tsuen Wan</option>
+									<option>Tuen Mun</option>
+									<option>Yuen Long</option>
+									<option>Kowloon City</option>
+									<option>Kwun Tong</option>
+									<option>Sham Shui Po</option>
+									<option>Wong Tai Sin</option>
+									<option>Yau Tsim Mong</option>
+									<option>Central &amp; Western</option>
+									<option>Eastern</option>
+									<option>Southern</option>
+									<option>Wan Chai</option>
+								</select>
+							</li>
+							<li>
+								<label for="category">Category</label>
+								<select id="category">
+									<option>Attractions</option>
+									<option>Shop</option>
+									<option>Things to Do</option>
+									<option>Dine and Drink</option>
+								</select>
+							</li>
+							<li class="submit-button">
+								<input type="submit" id="search_submit" value="Search Map">
+							</li>
+						</ul>
+					</form>
+
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
+					<div style='overflow:hidden;height:480px;width:100%;'>
+						<div id='gmap_canvas' style='height:480px;width:100%;'></div>
+						<div>
+							<small>
+								<a href="http://embedgooglemaps.com">embed google maps</a>
+							</small>
+						</div>
+						<div>
+							<small>
+								<a href="https://privacypolicytemplate.net">privacy policy template</a>
+							</small>
+						</div>
+						<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+					</div>
+
+					<script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(22.396428,114.10949700000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(22.396428,114.10949700000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Explore</strong><br>Hong Kong<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+				</div>
+				<div class="one-width">
+					<ul class="image-links">
+						<li class="shop-link"><a href="#" title="Shop">Shop</a>
+						<li class="thingstodo-link"><a href="#" title="Things to Do">Things to Do</a>
+						<li class="attractions-link"><a href="#" title="Attractions">Attractions</a>
+						<li class="dinedrink-link"><a href="#" title="Dine &amp; Drink">Dine &amp; Drink</a>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+				<div class="site-info">
+					<p>About Hong Kong Tourism Board - <a href="#" title="News">News</a> - <a href="#" title="Sitemap">Sitemap</a> - <a href="#" title="Contact Us">Contact Us</a> - <a href="#" title="Connect with Hong Kong">Connect with Hong Kong</a></p>
+					<p>Copyright &copy; 2016 Hong Kong Tourism Board. All rights reserved. <a href="#" title="Privacy policy">Privacy policy</a> | <a href="#" title="Cookies policy">Cookies policy</a> | <a href="#" title="Terms of use">Terms of use</a></p>
+				</div>
+				<div class="footer-logos">
+					<img src="images/footer-hk.png" alt="Hong Kong" />
+					<img src="images/footer-hktb.png" alt="Hong Kong Tourism Board" />
+				</div>
+		</footer>
+
+	</body>
+</html>

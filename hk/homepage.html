@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Discover Hong Kong</title>
+		<meta name="description" content="Discover Hong Kong">
+		<meta name="author" content="Discover Hong Kong">
+
+	    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+			<header id="header" class="banner homepage">
+				<div class="container">
+					<a href="#" title="Hong Kong - Asia's World City" class="header-logo">
+						<img src="images/logo.png" alt="Hong Kong - Asia's World City" />
+					</a>
+					<div class="navigation">
+						<div class="nav-container">
+						<select class="language">
+							<option selected>Select Language</option>
+							<option>English</option>
+							<option>Chinese</option>
+						</select>
+							<ul id="menu">
+							    <li><a href="attractions.html" title="Attractions">Attractions</a></li>
+							    <li><a href="dineanddrink.html" title="Dine and Drink">Dine and Drink</a></li>
+							    <li><a href="shop.html" title="Shop">Shop</a></li>
+							    <li><a href="thingstodo.html" title="Things to Do">Things to Do</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#homepage_content" title="Explore" class="home-button">Explore</a>
+				</div>
+			</header>
+			<section id="homepage_content">
+				<div class="container">
+					<div class="half-width">
+						<h2>Events and Festivals</h2>
+						<div class="flexslider">
+						  <ul class="slides">
+						    <li>
+						      <img src="images/event.jpg" />
+						    </li>
+						    <li>
+						      <img src="images/event2.jpg" />
+						    </li>
+						    <li>
+						      <img src="images/event3.jpg" />
+						    </li>
+						    <li>
+						      <img src="images/event4.jpg" />
+						    </li>
+						    <li>
+						      <img src="images/event5.jpg" />
+						    </li>
+						  </ul>
+						</div>
+
+					</div>
+					<div class="half-width">
+						<ul class="image-links">
+							<li class="thingstodo-link"><a href="#" title="Things to Do">Things to Do</a>
+							<li class="attractions-link"><a href="#" title="Attractions">Attractions</a>
+							<li class="dinedrink-link"><a href="#" title="Dine &amp; Drink">Dine &amp; Drink</a>
+							<li class="shop-link"><a href="#" title="Shop">Shop</a>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+			<footer id="footer">
+					<div class="site-info">
+						<p>About Hong Kong Tourism Board - <a href="#" title="News">News</a> - <a href="#" title="Sitemap">Sitemap</a> - <a href="#" title="Contact Us">Contact Us</a> - <a href="#" title="Connect with Hong Kong">Connect with Hong Kong</a></p>
+						<p>Copyright &copy; 2016 Hong Kong Tourism Board. All rights reserved. <a href="#" title="Privacy policy">Privacy policy</a> | <a href="#" title="Cookies policy">Cookies policy</a> | <a href="#" title="Terms of use">Terms of use</a></p>
+					</div>
+					<div class="footer-logos">
+						<img src="images/footer-hk.png" alt="Hong Kong" />
+						<img src="images/footer-hktb.png" alt="Hong Kong Tourism Board" />
+					</div>
+			</footer>
+
+			  <!-- jQuery -->
+			  <script src="js/jquery.min.js"></script>
+
+			  <!-- FlexSlider -->
+			  <script defer src="js/jquery.flexslider-min.js"></script>
+
+			  <!-- Navigation -->
+			  <script defer src="js/jquery.slicknav.js"></script>
+
+			  <!-- Language -->
+			  <script defer src="js/chosen.jquery.js"></script>
+
+			  <script type="text/javascript">
+			    $(document).ready(function(){
+					  $('.flexslider').flexslider({
+					    animation: "slide"
+
+					  });
+					  $('#menu').slicknav({
+						prependTo:'.nav-container',
+						label: ""
+					  });
+
+					  $('a[href*="#"]:not([href="#"])').click(function() {
+					    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					      var target = $(this.hash);
+					      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					      if (target.length) {
+					        $('html, body').animate({
+					          scrollTop: target.offset().top
+					        }, 1000);
+					        return false;
+					      }
+					    }
+					  });
+					  $(".language").chosen({disable_search_threshold: 99});
+			    });
+			  </script>
+
+	</body>
+</html>
