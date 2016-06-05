@@ -291,8 +291,8 @@ header, #site-header, section, footer, #site-footer {
 }
 
 .slider-width {
-    float: left;
-    width: 80%;
+/*    float: left;
+*/    width: 80%;
     margin: 0 auto;
 }
 
@@ -305,6 +305,10 @@ header, #site-header, section, footer, #site-footer {
 
 .third-width.first {
     clear: left;
+}
+
+.third-width img {
+    max-width: 100%;
 }
 
 .three-width {

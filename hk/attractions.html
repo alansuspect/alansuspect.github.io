@@ -14,22 +14,26 @@
 	</head>
 
 	<body>
-		<header id="header" class="banner attractions">
-			<div class="container">
-				<a href="#" title="Hong Kong - Asia's World City" class="header-logo">
-					<img src="images/logo.png" alt="Hong Kong - Asia's World City" />
-				</a>
-				<div class="navigation">
-					<select>
-						<span>make js</span>
-					</select>
-					<ul>
-						<li><a href="attractions.html" title="Attractions">Attractions</a></li>
-						<li><a href="dineanddrink.html" title="Dine and Drink">Dine and Drink</a></li>
-						<li><a href="shop.html" title="Shop">Shop</a></li>
-						<li><a href="thingstodo.html" title="Things to Do">Things to Do</a></li>
-					</ul>
-				</div>
+			<header id="header" class="banner attractions">
+				<div class="container">
+					<a href="#" title="Hong Kong - Asia's World City" class="header-logo">
+						<img src="images/logo.png" alt="Hong Kong - Asia's World City" />
+					</a>
+					<div class="navigation">
+						<div class="nav-container">
+						<select class="language">
+							<option selected>Select Language</option>
+							<option>English</option>
+							<option>Chinese</option>
+						</select>
+							<ul id="menu">
+							    <li><a href="#" title="About Us">About Us</a></li>
+							    <li><a href="#" title="News">News</a></li>
+							    <li><a href="#" title="Guide to Hong Kong">Guide to Hong Kong</a></li>
+							    <li><a href="explore.html" title="Explore">Explore</a></li>
+							</ul>
+						</div>
+					</div>
 			</div>
 		</header>
 		<section id="attractions" class="intro-text">
@@ -77,6 +81,29 @@
 					<img src="images/footer-hktb.png" alt="Hong Kong Tourism Board" />
 				</div>
 		</footer>
+
+
+			  <!-- jQuery -->
+			  <script src="js/jquery.min.js"></script>
+
+			  <!-- Navigation -->
+			  <script defer src="js/jquery.slicknav.js"></script>
+
+			  <!-- Language -->
+			  <script defer src="js/chosen.jquery.js"></script>
+
+			  <script type="text/javascript">
+			    $(document).ready(function(){
+
+					  $('#menu').slicknav({
+						prependTo:'.nav-container',
+						label: ""
+					  });
+
+
+					  $(".language").chosen({disable_search_threshold: 99});
+			    });
+			  </script>
 
 
 	</body>
