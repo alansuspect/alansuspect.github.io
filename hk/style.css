@@ -425,7 +425,7 @@ h2 {
 
 a.home-button {
     position: absolute;
-    bottom: 4em;
+    top: 40em;
     left: 50%;
     width: 16em;
     margin-left: -8em;
