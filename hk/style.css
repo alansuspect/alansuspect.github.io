@@ -425,7 +425,7 @@ h2 {
 
 a.home-button {
     position: absolute;
-    bottom: 4em;
+    top: 32em;
     left: 50%;
     width: 16em;
     margin-left: -8em;
@@ -433,7 +433,8 @@ a.home-button {
     color: #ffffff;
     text-decoration: none;
     border: 1px solid #ffffff;
-    padding: 1em;
+    padding: 0.9em;
+    font-size: 1.25em;
 }
 
 a.home-button:hover {
@@ -580,6 +581,27 @@ ul.image-links li.dinedrink-link {
 }
 
 
+/* shop */
+
+.flexslider .caption {
+    position: absolute;
+    z-index: 999;
+    top: 75%;
+    color: #ffffff;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: 0.4em 1em 1.4em;
+    margin: 0; 
+}
+
+.flexslider h3 {
+    line-height: 2.6;
+}
+
+.flexslider h3, .flexslider p {
+    margin: 0;
+}
+
 
 
 /* footer */
@@ -676,6 +698,7 @@ footer, #site-footer {
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
+  position: relative;
 }
 .flexslider .slides img {
   width: 100%;
