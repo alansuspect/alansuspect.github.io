@@ -425,11 +425,7 @@ h2 {
 
 a.home-button {
     position: absolute;
-<<<<<<< HEAD
     top: 32em;
-=======
-    top: 40em;
->>>>>>> origin/master
     left: 50%;
     width: 16em;
     margin-left: -8em;
