@@ -34,7 +34,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="#homepage_content" title="Explore" class="home-button">Explore</a>
+					<a href="explore.html" title="Explore" class="home-button">Explore</a>
 				</div>
 			</header>
 			<section id="homepage_content">
@@ -107,18 +107,7 @@
 						label: ""
 					  });
 
-					  $('a[href*="#"]:not([href="#"])').click(function() {
-					    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-					      var target = $(this.hash);
-					      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-					      if (target.length) {
-					        $('html, body').animate({
-					          scrollTop: target.offset().top
-					        }, 1000);
-					        return false;
-					      }
-					    }
-					  });
+
 					  $(".language").chosen({disable_search_threshold: 99});
 			    });
 			  </script>
